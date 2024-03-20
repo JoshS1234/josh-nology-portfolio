@@ -17,18 +17,15 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 80%;
-
-  h4 {
-    padding: 15px 10px;
-    font-size: 20px;
-
-    span {
-      font-size: 18px;
-    }
-  }
-
-  h1 {
-    padding: 10px 10px;
-    font-size: 40px;
-  }
 }
+.intro-box h4 {
+  padding: 15px 10px;
+  font-size: 20px;
+}
+.intro-box h4 span {
+  font-size: 18px;
+}
+.intro-box h1 {
+  padding: 10px 10px;
+  font-size: 40px;
+}/*# sourceMappingURL=styles.css.map */
