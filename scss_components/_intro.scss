@@ -6,20 +6,39 @@
   align-items: flex-start;
   width: 80%;
 
-  h4 {
-    padding: 15px 10px;
-    font-size: 20px;
+  div {
+    h4 {
+      padding: 15px 10px;
+      font-size: 20px;
 
-    span {
-      font-size: 18px;
+      span {
+        font-size: 18px;
+      }
+    }
+
+    h1 {
+      padding: 10px 10px;
+      font-size: 40px;
     }
   }
 
-  h1 {
-    padding: 10px 10px;
-    font-size: 40px;
+  img {
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .intro-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      display: inline;
+      height: 70%;
+      max-height: 300px;
+      width: 70%;
+      max-width: 300px;
+    }
+  }
 }
