@@ -16,5 +16,43 @@ body {
   background-color: red;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    list-style-type: none;
+    margin: 20px auto;
+    gap: 10px;
+    justify-items: center;
+
+    .project-list__project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      width: 90%;
+      max-width: 90%;
+      height: 90%;
+      max-height: 90%;
+
+      .project-list__project-image {
+        width: 80%;
+        max-width: 80%;
+        height: 80%;
+        max-height: 80%;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
 }

@@ -171,8 +171,8 @@
     width: 90%;
     height: 90%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
     background-color: lightblue;
     padding: 10px;
@@ -204,4 +204,38 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: red;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.project-container .project-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 20px auto;
+  gap: 10px;
+  justify-items: center;
+}
+.project-container .project-list .project-list__project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  max-width: 90%;
+  height: 90%;
+  max-height: 90%;
+}
+.project-container .project-list .project-list__project-card .project-list__project-image {
+  width: 80%;
+  max-width: 80%;
+  height: 80%;
+  max-height: 80%;
 }/*# sourceMappingURL=styles.css.map */
