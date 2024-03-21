@@ -45,18 +45,35 @@
   align-items: flex-start;
   width: 80%;
 }
-.intro-box h4 {
+.intro-box div h4 {
   padding: 15px 10px;
   font-size: 20px;
 }
-.intro-box h4 span {
+.intro-box div h4 span {
   font-size: 18px;
 }
-.intro-box h1 {
+.intro-box div h1 {
   padding: 10px 10px;
   font-size: 40px;
 }
+.intro-box img {
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+  .intro-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .intro-box img {
+    display: inline;
+    height: 70%;
+    max-height: 300px;
+    width: 70%;
+    max-width: 300px;
+  }
+}
 .about-me {
   display: flex;
   flex-direction: column;
