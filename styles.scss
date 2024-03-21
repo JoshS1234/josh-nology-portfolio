@@ -16,5 +16,145 @@ body {
   background-color: red;
 }
 
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 20px auto;
+  gap: 10px;
+  justify-items: center;
+  background-color: lightblue;
+  padding: 20px;
+  width: 80%;
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightcoral;
+
+    width: 90%;
+    max-width: 90%;
+    height: fit-content;
+    max-height: 100%;
+    padding: 10px;
+
+    .project__project-image {
+      width: 60%;
+      max-width: 60%;
+      height: 60%;
+      max-height: 60%;
+    }
+
+    .project__content-container {
+      background-color: lightgreen;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .project__button-container {
+      background-color: lightseagreen;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+
+      .project__button {
+        background-color: lightcyan;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+        margin: 0 5px;
+
+        .project__button-symbol {
+          width: 50%;
+          height: 50%;
+          max-width: 30px;
+          max-height: 30px;
+        }
+      }
+    }
+  }
+
+  .project-card--extra {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+    justify-items: center;
+    background-color: lightblue;
+    width: 80%;
+
+    .project-card {
+      width: 90%;
+      max-width: 90%;
+      height: 100%;
+      max-height: 100%;
+      padding: 10px;
+
+      .project__project-image {
+        width: 60%;
+        max-width: 60%;
+        height: 60%;
+        max-height: 60%;
+      }
+
+      .project__content-container {
+        background-color: lightgreen;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+      }
+
+      .project__button-container {
+        background-color: lightseagreen;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+
+        .project__button {
+          background-color: lightcyan;
+          text-decoration: none;
+          padding: 5px;
+          border-radius: 4px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          width: 50%;
+          max-width: 50%;
+          margin: 0 5px;
+
+          .project__button-symbol {
+            width: 50%;
+            height: 50%;
+            max-width: 30px;
+            max-height: 30px;
+          }
+        }
+      }
+    }
+    .project-card--extra {
+      display: flex;
+    }
+  }
 }
