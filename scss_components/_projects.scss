@@ -53,14 +53,18 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        width: 40%;
+        width: 50%;
         margin: 0 5px;
+
+        p {
+          font-size: max(1.6vw, 1em);
+        }
 
         .project__button-symbol {
           width: 50%;
           height: 50%;
-          max-width: 30px;
-          max-height: 30px;
+          max-width: 25px;
+          max-height: 25px;
         }
       }
     }
@@ -125,6 +129,10 @@
           width: 50%;
           max-width: 50%;
           margin: 0 5px;
+
+          p {
+            font-size: min(1.6vw, 1em);
+          }
 
           .project__button-symbol {
             width: 50%;

@@ -246,14 +246,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 40%;
+  width: 50%;
   margin: 0 5px;
+}
+.project-container .project-card .project__button-container .project__button p {
+  font-size: max(1.6vw, 1em);
 }
 .project-container .project-card .project__button-container .project__button .project__button-symbol {
   width: 50%;
   height: 50%;
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 25px;
+  max-height: 25px;
 }
 .project-container .project-card--extra {
   display: none;
@@ -311,6 +314,9 @@
     width: 50%;
     max-width: 50%;
     margin: 0 5px;
+  }
+  .project-container .project-card .project__button-container .project__button p {
+    font-size: min(1.6vw, 1em);
   }
   .project-container .project-card .project__button-container .project__button .project__button-symbol {
     width: 50%;
