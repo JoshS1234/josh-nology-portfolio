@@ -2,6 +2,7 @@
 @use "./scss_components/intro";
 @use "./scss_components/about-me";
 @use "./scss_components/technical-skills";
+@use "./scss_components/projects";
 
 * {
   margin: 0;
@@ -16,145 +17,82 @@ body {
   background-color: red;
 }
 
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  margin: 20px auto;
-  gap: 10px;
-  justify-items: center;
-  background-color: lightblue;
-  padding: 20px;
-  width: 80%;
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
 
-  .project-card {
+  .footer__website-link-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: fit-content;
+    width: 60%;
     justify-content: space-around;
     align-items: center;
-    background-color: lightcoral;
+    margin: 10px auto;
 
-    width: 90%;
-    max-width: 90%;
-    height: fit-content;
-    max-height: 100%;
-    padding: 10px;
-
-    .project__project-image {
-      width: 60%;
-      max-width: 60%;
-      height: 60%;
-      max-height: 60%;
-    }
-
-    .project__content-container {
-      background-color: lightgreen;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
-    .project__button-container {
-      background-color: lightseagreen;
-      width: 100%;
-      padding: 10px;
+    .footer__website-link {
       display: flex;
       flex-direction: row;
+      min-width: 40px;
+      width: 40%;
+      max-width: 50px;
+      background-color: white;
+      padding: 10px;
+      margin: 0px 10px;
+      border-radius: 50%;
 
-      .project__button {
-        background-color: lightcyan;
-        text-decoration: none;
-        padding: 5px;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 40%;
-        margin: 0 5px;
-
-        .project__button-symbol {
-          width: 50%;
-          height: 50%;
-          max-width: 30px;
-          max-height: 30px;
-        }
+      img {
+        height: 100%;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
       }
     }
   }
 
-  .project-card--extra {
-    display: none;
+  .email {
+    margin: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .project-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    margin: 20px auto;
-    padding: 20px;
-    gap: 20px;
-    justify-items: center;
-    background-color: lightblue;
-    width: 80%;
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
 
-    .project-card {
-      width: 90%;
-      max-width: 90%;
-      height: 100%;
-      max-height: 100%;
-      padding: 10px;
+    .footer__website-link-container {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      justify-content: flex-end;
 
-      .project__project-image {
-        width: 60%;
-        max-width: 60%;
-        height: 60%;
-        max-height: 60%;
-      }
-
-      .project__content-container {
-        background-color: lightgreen;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 10px;
-      }
-
-      .project__button-container {
-        background-color: lightseagreen;
-        width: 100%;
-        padding: 5px;
+      .footer__website-link {
         display: flex;
         flex-direction: row;
+        min-width: 40px;
+        width: 40%;
+        max-width: 50px;
+        background-color: white;
+        padding: 10px;
+        margin: 0px 10px;
+        border-radius: 50%;
 
-        .project__button {
-          background-color: lightcyan;
-          text-decoration: none;
-          padding: 5px;
-          border-radius: 4px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          width: 50%;
-          max-width: 50%;
-          margin: 0 5px;
-
-          .project__button-symbol {
-            width: 50%;
-            height: 50%;
-            max-width: 30px;
-            max-height: 30px;
-          }
+        img {
+          height: 100%;
+          width: 100%;
+          max-height: 100%;
+          max-width: 100%;
         }
       }
     }
-    .project-card--extra {
-      display: flex;
+
+    .email {
+      margin: 20px;
     }
   }
 }
