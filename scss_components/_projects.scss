@@ -1,12 +1,12 @@
+@use "./variables" as *;
+
 .project-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin: 20px auto;
   gap: 10px;
   justify-items: center;
-  background-color: lightblue;
-  padding: 20px;
+  background-color: $main-background-color;
   width: 80%;
 
   .project-card {
@@ -14,23 +14,36 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: lightcoral;
+    background-color: $main-background-color;
+    margin: 20px auto;
 
     width: 90%;
     max-width: 90%;
     height: fit-content;
     max-height: 100%;
-    padding: 10px;
 
-    .project__project-image {
-      width: 60%;
-      max-width: 60%;
-      height: 60%;
-      max-height: 60%;
+    .project__project-image-container {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+      background-color: $project-background;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+
+      .project__project-image {
+        width: 80%;
+        max-width: 80%;
+        height: 80%;
+        max-height: 80%;
+        padding-top: 10%;
+      }
     }
 
     .project__content-container {
-      background-color: lightgreen;
+      background-color: $main-background-color;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -38,14 +51,15 @@
     }
 
     .project__button-container {
-      background-color: lightseagreen;
+      background-color: $main-background-color;
       width: 100%;
       padding: 10px;
       display: flex;
       flex-direction: row;
 
       .project__button {
-        background-color: lightcyan;
+        background-color: $main-background-color;
+        border: 1px solid $primary-color;
         text-decoration: none;
         padding: 5px;
         border-radius: 4px;
@@ -84,12 +98,11 @@
     padding: 20px;
     gap: 20px;
     justify-items: center;
-    background-color: lightblue;
     width: 80%;
 
     .project-card {
-      width: 90%;
-      max-width: 90%;
+      width: 100%;
+      max-width: 100%;
       height: 100%;
       max-height: 100%;
       padding: 10px;
@@ -102,7 +115,6 @@
       }
 
       .project__content-container {
-        background-color: lightgreen;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -111,14 +123,12 @@
       }
 
       .project__button-container {
-        background-color: lightseagreen;
         width: 100%;
         padding: 5px;
         display: flex;
         flex-direction: row;
 
         .project__button {
-          background-color: lightcyan;
           text-decoration: none;
           padding: 5px;
           border-radius: 4px;
@@ -132,6 +142,7 @@
 
           p {
             font-size: min(1.6vw, 1em);
+            color: $primary-color;
           }
 
           .project__button-symbol {

@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .header-bar {
   display: none;
 }
@@ -9,7 +11,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: yellow;
+    background-color: $main-background-color;
 
     .header__nav-bar {
       display: flex;
@@ -25,16 +27,12 @@
         margin: 5px auto;
         a {
           text-decoration: none;
+          color: $primary-color;
         }
       }
 
-      .header__button--nav {
-        background-color: lightblue;
-      }
-
       .header__button--contact {
-        background-color: lightcoral;
-        border: 1px solid black;
+        border: 1px solid $primary-color;
         border-radius: 4px;
       }
     }

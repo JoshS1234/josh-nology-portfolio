@@ -1,3 +1,5 @@
+@use "./scss_components/variables" as *;
+
 @use "./scss_components/header";
 @use "./scss_components/intro";
 @use "./scss_components/about-me";
@@ -15,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: red;
+  background-color: $main-background-color;
 }
 
 @media screen and (min-width: 768px) {

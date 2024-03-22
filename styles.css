@@ -9,7 +9,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-color: yellow;
+    background-color: #ffffff;
   }
   .header-bar .header__nav-bar {
     display: flex;
@@ -27,18 +27,15 @@
   }
   .header-bar .header__nav-bar .header__button a {
     text-decoration: none;
-  }
-  .header-bar .header__nav-bar .header__button--nav {
-    background-color: lightblue;
+    color: #000000;
   }
   .header-bar .header__nav-bar .header__button--contact {
-    background-color: lightcoral;
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-radius: 4px;
   }
 }
 .intro-box {
-  background-color: yellow;
+  background-color: #ffffff;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -79,7 +76,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: yellow;
+  background-color: #ffffff;
   width: 80%;
   margin: 50px auto;
 }
@@ -105,9 +102,9 @@
   .about-me {
     display: grid;
     grid-template-columns: 2fr 5fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 3fr 7fr;
     grid-template-areas: "image header" "image text";
-    background-color: yellow;
+    background-color: #ffffff;
     width: 80%;
     margin: 50px auto;
     padding: 20px;
@@ -116,6 +113,7 @@
   .about-me .about-me__header {
     grid-area: header;
     padding-left: 30px;
+    align-content: flex-end;
   }
   .about-me .about-me__image {
     grid-area: image;
@@ -123,14 +121,17 @@
     width: fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
   }
   .about-me .about-me__text-section {
     grid-area: text;
+    align-content: flex-start;
+    height: 100%;
   }
   .about-me .about-me__text-section p {
     font-size: 1rem;
+    padding: 5px 30px;
   }
 }
 .technical-skills {
@@ -138,7 +139,7 @@
   flex-direction: column;
   align-items: center;
   width: 80%;
-  background-color: yellow;
+  background-color: #ffffff;
 }
 .technical-skills .technical-skills__title {
   padding: 20px;
@@ -153,14 +154,12 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 10px;
-  background-color: lightblue;
   padding: 10px;
   margin: 10px;
 }
 .technical-skills .technical-skills__card-list li {
   list-style-type: none;
   padding: 10px;
-  background-color: green;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -191,14 +190,12 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
-    background-color: lightblue;
     padding: 10px;
     margin: 10px;
   }
   .technical-skills .technical-skills__card-list li {
     list-style-type: none;
     padding: 10px;
-    background-color: green;
   }
   .technical-skills .technical-skills__card-list li .technical-skills__card-image {
     height: 60%;
@@ -214,11 +211,9 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  margin: 20px auto;
   gap: 10px;
   justify-items: center;
-  background-color: lightblue;
-  padding: 20px;
+  background-color: #ffffff;
   width: 80%;
 }
 .project-container .project-card {
@@ -226,36 +221,49 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: lightcoral;
+  background-color: #ffffff;
+  margin: 20px auto;
   width: 90%;
   max-width: 90%;
   height: -moz-fit-content;
   height: fit-content;
   max-height: 100%;
-  padding: 10px;
 }
-.project-container .project-card .project__project-image {
-  width: 60%;
-  max-width: 60%;
-  height: 60%;
-  max-height: 60%;
+.project-container .project-card .project__project-image-container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-color: #e3f6f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.project-container .project-card .project__project-image-container .project__project-image {
+  width: 80%;
+  max-width: 80%;
+  height: 80%;
+  max-height: 80%;
+  padding-top: 10%;
 }
 .project-container .project-card .project__content-container {
-  background-color: lightgreen;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 .project-container .project-card .project__button-container {
-  background-color: lightseagreen;
+  background-color: #ffffff;
   width: 100%;
   padding: 10px;
   display: flex;
   flex-direction: row;
 }
 .project-container .project-card .project__button-container .project__button {
-  background-color: lightcyan;
+  background-color: #ffffff;
+  border: 1px solid #000000;
   text-decoration: none;
   padding: 5px;
   border-radius: 4px;
@@ -288,12 +296,11 @@
     padding: 20px;
     gap: 20px;
     justify-items: center;
-    background-color: lightblue;
     width: 80%;
   }
   .project-container .project-card {
-    width: 90%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     height: 100%;
     max-height: 100%;
     padding: 10px;
@@ -305,7 +312,6 @@
     max-height: 60%;
   }
   .project-container .project-card .project__content-container {
-    background-color: lightgreen;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -313,14 +319,12 @@
     padding: 10px;
   }
   .project-container .project-card .project__button-container {
-    background-color: lightseagreen;
     width: 100%;
     padding: 5px;
     display: flex;
     flex-direction: row;
   }
   .project-container .project-card .project__button-container .project__button {
-    background-color: lightcyan;
     text-decoration: none;
     padding: 5px;
     border-radius: 4px;
@@ -334,6 +338,7 @@
   }
   .project-container .project-card .project__button-container .project__button p {
     font-size: min(1.6vw, 1em);
+    color: #000000;
   }
   .project-container .project-card .project__button-container .project__button .project__button-symbol {
     width: 50%;
@@ -428,5 +433,5 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: red;
+  background-color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */
