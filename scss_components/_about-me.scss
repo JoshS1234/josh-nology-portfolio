@@ -1,9 +1,11 @@
+@use "./variables" as *;
+
 .about-me {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: yellow;
+  background-color: $main-background-color;
   width: 80%;
   margin: 50px auto;
 
@@ -22,9 +24,11 @@
     border: 1px solid black;
   }
 
-  .about-me__text-section p {
-    padding: 20px 30px;
-    font-size: 14px;
+  .about-me__text-section {
+    p {
+      padding: 20px 30px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -32,9 +36,9 @@
   .about-me {
     display: grid;
     grid-template-columns: 2fr 5fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 3fr 7fr;
     grid-template-areas: "image header" "image text";
-    background-color: yellow;
+    background-color: $main-background-color;
     width: 80%;
     margin: 50px auto;
     padding: 20px;
@@ -43,21 +47,25 @@
     .about-me__header {
       grid-area: header;
       padding-left: 30px;
+      align-content: flex-end;
     }
 
     .about-me__image {
       grid-area: image;
       width: fit-content;
       height: fit-content;
-      max-width: 90%;
-      max-height: 90%;
+      max-width: 100%;
+      max-height: 100%;
     }
 
     .about-me__text-section {
       grid-area: text;
+      align-content: flex-start;
+      height: 100%;
 
       p {
         font-size: 1rem;
+        padding: 5px 30px;
       }
     }
   }
