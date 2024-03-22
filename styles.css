@@ -345,19 +345,6 @@
     display: flex;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: red;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -430,4 +417,16 @@ body {
   .footer .email {
     margin: 20px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
 }/*# sourceMappingURL=styles.css.map */
