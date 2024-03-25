@@ -30,9 +30,24 @@
     text-decoration: none;
     color: #000000;
   }
+  .header-bar .header__nav-bar .header__button:hover {
+    border: 2px solid black;
+    background-color: #e6e6e6;
+    padding: 8px;
+    transition: all 0.2s ease-in-out;
+  }
   .header-bar .header__nav-bar .header__button--contact {
-    border: 1px solid #000000;
+    border: 2px solid #000000;
+    padding: 8px;
     border-radius: 4px;
+  }
+  .header-bar .header__nav-bar .header__button--contact:hover {
+    background-color: #000000;
+    padding: 8px;
+    transition: all 0.2s ease-in-out;
+  }
+  .header-bar .header__nav-bar .header__button--contact:hover a {
+    color: white;
   }
 }
 .intro-box {
