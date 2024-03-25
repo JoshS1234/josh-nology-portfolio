@@ -37,6 +37,13 @@
       max-width: 100%;
       max-height: 100%;
 
+      &:hover {
+        background-color: darken($main-background-color, 10%);
+        border: 2px solid black;
+        transition: all 0.25s ease-in-out;
+        border-radius: 10%;
+      }
+
       .technical-skills__card-image {
         height: 60%;
         width: 60%;

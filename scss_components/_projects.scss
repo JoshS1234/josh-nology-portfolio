@@ -21,6 +21,12 @@
     max-width: 90%;
     height: fit-content;
     max-height: 100%;
+    padding: 2px;
+
+    &:hover {
+      background-color: darken($project-background, 10%);
+      transition: all 0.25s ease-in-out;
+    }
 
     .project__project-image-container {
       width: 100%;
@@ -79,6 +85,11 @@
           height: 50%;
           max-width: 25px;
           max-height: 25px;
+        }
+
+        &:hover {
+          background-color: darken($main-background-color, 10%);
+          transition: all 0.25s ease-in-out;
         }
       }
     }
