@@ -185,6 +185,12 @@
   max-width: 100%;
   max-height: 100%;
 }
+.technical-skills .technical-skills__card-list li:hover {
+  background-color: #e6e6e6;
+  border: 2px solid black;
+  transition: all 0.25s ease-in-out;
+  border-radius: 10%;
+}
 .technical-skills .technical-skills__card-list li .technical-skills__card-image {
   height: 60%;
   width: 60%;
@@ -247,6 +253,11 @@
   height: -moz-fit-content;
   height: fit-content;
   max-height: 100%;
+  padding: 2px;
+}
+.project-container .project-card:hover {
+  background-color: #bceae7;
+  transition: all 0.25s ease-in-out;
 }
 .project-container .project-card .project__project-image-container {
   width: 100%;
@@ -301,6 +312,10 @@
   height: 50%;
   max-width: 25px;
   max-height: 25px;
+}
+.project-container .project-card .project__button-container .project__button:hover {
+  background-color: #e6e6e6;
+  transition: all 0.25s ease-in-out;
 }
 .project-container .project-card--extra {
   display: none;
@@ -376,7 +391,7 @@
   height: fit-content;
   align-items: center;
   background-color: black;
-  color: white;
+  color: #ffffff;
   width: 100%;
 }
 .footer .footer__website-link-container {
@@ -395,7 +410,7 @@
   min-width: 40px;
   width: 40%;
   max-width: 50px;
-  background-color: white;
+  background-color: #ffffff;
   padding: 10px;
   margin: 0px 10px;
   border-radius: 50%;
@@ -427,10 +442,14 @@
     min-width: 40px;
     width: 40%;
     max-width: 50px;
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px;
     margin: 0px 10px;
     border-radius: 50%;
+  }
+  .footer .footer__website-link-container .footer__website-link:hover {
+    background-color: gray;
+    transition: all 0.25s ease-in-out;
   }
   .footer .footer__website-link-container .footer__website-link img {
     height: 100%;
