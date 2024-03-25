@@ -31,10 +31,10 @@
     color: #000000;
   }
   .header-bar .header__nav-bar .header__button:hover {
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: #e6e6e6;
-    padding: 8px;
-    transition: all 0.2s ease-in-out;
+    padding: 9px;
+    transition: all 0.25s ease-in-out;
   }
   .header-bar .header__nav-bar .header__button--contact {
     border: 2px solid #000000;
@@ -44,7 +44,7 @@
   .header-bar .header__nav-bar .header__button--contact:hover {
     background-color: #000000;
     padding: 8px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
   .header-bar .header__nav-bar .header__button--contact:hover a {
     color: white;
