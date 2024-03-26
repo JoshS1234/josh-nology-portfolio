@@ -95,17 +95,19 @@
         }
       }
     }
-  }
-
-  .project-card--extra {
-    display: none;
+    &--extra {
+      display: none;
+    }
+    &--extra-desktop {
+      display: none;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .project-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin: 20px auto;
     padding: 20px;
     gap: 20px;
@@ -130,12 +132,30 @@
           }
         }
       }
-    }
-    .project-card--extra {
-      display: flex;
+      &--extra {
+        display: flex;
+      }
     }
   }
 }
 
 @media screen and (min-width: 992px) {
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .project-card {
+      .project__button-container {
+        .project__button {
+          p {
+          }
+
+          .project__button-symbol {
+          }
+        }
+      }
+      &--extra-desktop {
+        display: flex;
+      }
+    }
+  }
 }
