@@ -143,6 +143,7 @@
   .project-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    width: 90%;
     .project-card {
       .project__button-container {
         .project__button {
