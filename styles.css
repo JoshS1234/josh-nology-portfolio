@@ -120,7 +120,7 @@
 }
 .about-me .about-me__image--rotating {
   transform: rotate(360deg);
-  transition: transform 1.4s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 .about-me .about-me__text-section p {
   padding: 10px 30px;
