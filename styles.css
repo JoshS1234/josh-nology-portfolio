@@ -119,9 +119,7 @@
     grid-template-columns: 3fr 6fr;
     grid-template-rows: 3fr 7fr;
     grid-template-areas: "image header" "image text";
-    background-color: #ffffff;
     width: 80%;
-    margin: 50px auto;
     gap: 20px;
   }
   .about-me .about-me__header {
@@ -431,31 +429,12 @@
     justify-content: space-between;
   }
   .footer .footer__website-link-container {
-    display: flex;
-    flex-direction: row;
     width: 80%;
     justify-content: flex-end;
-  }
-  .footer .footer__website-link-container .footer__website-link {
-    display: flex;
-    flex-direction: row;
-    min-width: 40px;
-    width: 40%;
-    max-width: 50px;
-    background-color: #ffffff;
-    padding: 10px;
-    margin: 0px 10px;
-    border-radius: 50%;
   }
   .footer .footer__website-link-container .footer__website-link:hover {
     background-color: gray;
     transition: all 0.25s ease-in-out;
-  }
-  .footer .footer__website-link-container .footer__website-link img {
-    height: 100%;
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
   }
   .footer .email {
     margin: 20px;

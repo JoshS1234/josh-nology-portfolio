@@ -37,9 +37,7 @@
     grid-template-columns: 3fr 6fr;
     grid-template-rows: 3fr 7fr;
     grid-template-areas: "image header" "image text";
-    background-color: $main-background-color;
     width: 80%;
-    margin: 50px auto;
     gap: 20px;
 
     .about-me__header {

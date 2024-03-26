@@ -49,32 +49,13 @@
     justify-content: space-between;
 
     .footer__website-link-container {
-      display: flex;
-      flex-direction: row;
       width: 80%;
       justify-content: flex-end;
 
       .footer__website-link {
-        display: flex;
-        flex-direction: row;
-        min-width: 40px;
-        width: 40%;
-        max-width: 50px;
-        background-color: $main-background-color;
-        padding: 10px;
-        margin: 0px 10px;
-        border-radius: 50%;
-
         &:hover {
           background-color: darken($main-background-color, 50%);
           transition: all 0.25s ease-in-out;
-        }
-
-        img {
-          height: 100%;
-          width: 100%;
-          max-height: 100%;
-          max-width: 100%;
         }
       }
     }
