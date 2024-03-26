@@ -41,7 +41,7 @@
         background-color: darken($main-background-color, 10%);
         border: 2px solid black;
         transition: all 0.25s ease-in-out;
-        border-radius: 10%;
+        border-radius: 5px;
       }
 
       .technical-skills__card-image {
@@ -67,26 +67,10 @@
     }
 
     .technical-skills__card-list {
-      width: 90%;
-      height: 90%;
-      display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      gap: 10px;
-      padding: 10px;
-      margin: 10px;
 
       li {
-        list-style-type: none;
-        padding: 10px;
-
-        .technical-skills__card-image {
-          height: 60%;
-          width: 60%;
-          max-width: 80%;
-          max-height: 80%;
-        }
-
         .technical-skills__card-text {
           font-size: 1.2vw;
         }
