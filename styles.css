@@ -31,10 +31,9 @@
     color: #000000;
   }
   .header-bar .header__nav-bar .header__button:hover {
-    border: 1px solid black;
     background-color: #e6e6e6;
-    padding: 9px;
     transition: all 0.25s ease-in-out;
+    border-radius: 3px;
   }
   .header-bar .header__nav-bar .header__button--contact {
     border: 2px solid #000000;
@@ -43,8 +42,6 @@
   }
   .header-bar .header__nav-bar .header__button--contact:hover {
     background-color: #000000;
-    padding: 8px;
-    transition: all 0.25s ease-in-out;
   }
   .header-bar .header__nav-bar .header__button--contact:hover a {
     color: white;
@@ -55,7 +52,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 80%;
 }
 .intro-box div h4 {
@@ -76,6 +73,7 @@
 @media screen and (min-width: 768px) {
   .intro-box {
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
   }
   .intro-box img {
@@ -84,6 +82,18 @@
     max-height: 300px;
     width: 70%;
     max-width: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .intro-box {
+    width: 90%;
+  }
+  .intro-box img {
+    display: inline;
+    height: 90%;
+    max-height: 400px;
+    width: 90%;
+    max-width: 400px;
   }
 }
 .about-me {
@@ -130,10 +140,6 @@
     grid-area: image;
     min-width: 250px;
     min-height: 250px;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 400px;
     margin: 0px;
   }
   .about-me .about-me__text-section {
@@ -145,6 +151,18 @@
   .about-me .about-me__text-section p {
     font-size: 1.2rem;
     padding: 2vw 0px 2vw 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-me {
+    width: 90%;
+  }
+  .about-me .about-me__image {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px;
   }
 }
 .technical-skills {
